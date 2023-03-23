@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trabalho Spring</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="main-container">
+    <h1>Cadastre-se para acessar o sistema</h1>
+    <form action="">
+      <div >
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" class="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+      </div>
+      <div >
+          <label for="name">Nome</label>
+          <input type="text" name="name" class="nome" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+      </div>
+      <div >
+        <label for="profissão">Profissão</label>
+        <input type="text" name="text" id="text"  class="profissao" placeholder="Digite sua Profissão" data-min-length="2">
+      </div>
+      <div >
+        <label for="number">Telefone</label>
+        <input type="text" name="text" id="text" class="telefone" placeholder="Digite seu telefone" data-min-length="2">
+      </div>
+      <div>
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+      </div>
+      <div class="full-box">
+        <input onclick= "irLista" id="btn-submit" type="submit" value="Registrar">
+      </div>
+    </form>
+  </div>
+  <p class="error-validation template"></p>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
